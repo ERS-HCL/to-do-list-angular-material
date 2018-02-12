@@ -4,7 +4,9 @@ A to do list component using angular material
 <p align="center">
     <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
 </p>
+
 [Click to see the demo](https://angular-material-todolist-2rug3q.stackblitz.io)
+
 
 
 ## Adding to do list component in your project
