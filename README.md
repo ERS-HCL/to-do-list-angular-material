@@ -51,3 +51,5 @@ Use getToDoList() of ToDoListComponent using @ViewChild decorator
 ```
 This method would return a object which has tasks:Task[], completedTasks:Task[] and inCompletedTasks:Task[]
 
+Import the required components from @angular/material 
+
