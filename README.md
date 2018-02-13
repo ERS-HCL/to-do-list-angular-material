@@ -1,27 +1,50 @@
-# AngularWorkspace
+#ToDo List component component for Angular Material.
+<p align="center">
+    <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
+</p>
+[Click to see the demo](https://angular-material-todolist-2rug3q.stackblitz.io)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
-## Development server
+## Adding to do list component in your project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```html
 
-## Code scaffolding
+<mat-to-do-list [taskList]="taskData" (updateTask)="showTasks($event)"></mat-to-do-list>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+taskData is the input for the to do list of type Task
 
-## Build
+## Task Interface
+```typescript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Task {
+  id: number;
+  name: string;
+  completed: boolean;
+}
+  
+```
 
-## Running unit tests
+## Listening to events
+```typescript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  showTasks(tasks: Task[]) {
+    console.log(tasks);
+  }
+  
+```
+## Method
+Use getToDoList() of ToDoListComponent using @ViewChild decorator
 
-## Running end-to-end tests
+```typescript
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  @ViewChild(ToDoListComponent)
+  private ToDoListComponent: ToDoListComponent
+  
+  ...
+  showTaskToDo() {
+    console.log(this.ToDoListComponent.getToDoList());
+  }
+    
+```
+This method would return a object which has tasks, completedTasks and inCompletedTasks
