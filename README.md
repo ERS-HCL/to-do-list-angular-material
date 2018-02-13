@@ -1,57 +1,27 @@
-# To do list component
-A to do list component using angular material
+# AngularWorkspace
 
-<p align="center">
-    <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
-</p>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
-[Click to see the demo](https://angular-material-todolist-2rug3q.stackblitz.io)
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-## Adding to do list component in your project
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```html
+## Build
 
-<mat-to-do-list [taskList]="taskData" (updateTask)="showTasks($event)"></mat-to-do-list>
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-```
-taskData is the input for the to do list of type Task
+## Running unit tests
 
-## Task Interface
-```typescript
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Task {
-  id: number;
-  name: string;
-  completed: boolean;
-}
-  
-```
+## Running end-to-end tests
 
-## Listening to events
-```typescript
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-  showTasks(tasks: Task[]) {
-    console.log(tasks);
-  }
-  
-```
-## Method
-Use getToDoList() of ToDoListComponent using @ViewChild decorator
+## Further help
 
-```typescript
-
-  @ViewChild(ToDoListComponent)
-  private ToDoListComponent: ToDoListComponent
-  
-  ...
-  showTaskToDo() {
-    console.log(this.ToDoListComponent.getToDoList());
-  }
-    
-```
-This method would return a object which has tasks:Task[], completedTasks:Task[] and inCompletedTasks:Task[]
-
-Import the required components from @angular/material 
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
