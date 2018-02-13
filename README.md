@@ -3,9 +3,8 @@
 <p align="center">
     <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
 </p>
-[Click to see the demo](https://angular-material-todolist-wuu6qb.stackblitz.io)
 
-If the above link for demo is not working, [use the link](https://stackblitz.com/edit/angular-material-todolist-wuu6qb?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&view=preview)
+To preview demo of to do list project, [Click here](https://stackblitz.com/edit/angular-material-todolist-wuu6qb?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&view=preview)
 
 # Getting Started
 
