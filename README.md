@@ -1,13 +1,18 @@
 # To Do List is a project developed in Angular Material.
+
 <p align="center">
     <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
 </p>
-[Click to see the demo](https://stackblitz.com/edit/angular-material-todolist-wuu6qb?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&view=preview)
+[Click to see the demo](https://angular-material-todolist-wuu6qb.stackblitz.io)
+
+If the above link for demo is not working, [use the link](https://stackblitz.com/edit/angular-material-todolist-wuu6qb?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&view=preview)
 
 # Getting Started
+
 We can either use the complete to do list project built on angular material or use only the to-do-list.component re-usable component.
 
 ## Using the complete angular material project
+
 Download the to-do-list folder and install the required packages and run the application. All the required material components are imported to the project.
 
 ### Installing
@@ -30,9 +35,10 @@ Download the to-do-list folder and install the required packages and run the app
 <mat-to-do-list [taskList]="taskData" (updateTask)="showTasks($event)"></mat-to-do-list>
 
 ```
-taskData is the input for the to do list of type Task
+taskData is the input for the to do list of type **Task**
 
-## Task Interface
+### Task Interface
+
 ```typescript
 
 Task {
@@ -43,7 +49,8 @@ Task {
   
 ```
 
-## Listening to events
+### Listening to events
+
 ```typescript
 
   showTasks(tasks: Task[]) {
@@ -51,8 +58,9 @@ Task {
   }
   
 ```
-## Method
-Use getToDoList() of ToDoListComponent using @ViewChild decorator
+### Method
+
+Use **getToDoList()** of ToDoListComponent using @ViewChild decorator
 
 ```typescript
 
@@ -65,4 +73,4 @@ Use getToDoList() of ToDoListComponent using @ViewChild decorator
   }
     
 ```
-This method would return an object which has tasks, completedTasks and inCompletedTasks
+This method would return an object which has **tasks**, **completedTasks** and **inCompletedTasks**
