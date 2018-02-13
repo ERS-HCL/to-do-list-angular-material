@@ -2,7 +2,7 @@
 <p align="center">
     <img  alt="To-Do-List" src="img/todolist.png" class="img-responsive">
 </p>
-[Click to see the demo](https://angular-material-todolist-2rug3q.stackblitz.io)
+[Click to see the demo](https://stackblitz.com/edit/angular-material-todolist-wuu6qb?embed=1&file=index.html&hideExplorer=1&hideNavigation=1&view=preview)
 
 # Getting Started
 We can either use the complete to do list project built on angular material or use only the to-do-list.component re-usable component.
